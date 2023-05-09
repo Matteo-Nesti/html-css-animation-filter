@@ -154,6 +154,36 @@
     text-align: center;
     text-decoration: none;
 }
+
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: swingBot .4s linear 2 alternate;
+}
+
+@keyframes swingBot {
+    from {
+        right: 20%;
+      }
+    to {
+        right: 50%;
+    }
+
+  }
+
+  .ex-12-button:hover .ex-12-top-white{
+    animation: swingTop .4s linear 2 alternate;
+}
+
+@keyframes swingTop {
+    from {
+        left: 10%;
+      }
+    to {
+        left: 50%;
+    }
+
+  }
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -162,6 +192,7 @@
     width: 60px;
     height: 20px;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -169,4 +200,77 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: completeRotation 4s linear;
+}
+
+@keyframes completeRotation {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    20% {
+        left: 100%;
+        top: -10px;
+    }
+
+    40% {
+        left: 100%;
+        top: 50px;
+    }
+
+    60% {
+        left: -15px;
+        top: 50px;
+    }
+
+    80% {
+        left: -15px;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: invertCompleteRotation 4s linear;
+}
+
+@keyframes invertCompleteRotation {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+    20% {
+        right: 80%;
+        bottom: -10px;
+    }
+
+    40% {
+        right: 80%;
+        bottom: 50px;
+    }
+
+    60% {
+        right: -15px;
+        bottom: 50px;
+    }
+
+    80% {
+        right: -15px;
+        bottom: -10px;
+    }
+
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
+
 }
